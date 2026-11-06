@@ -1,6 +1,6 @@
 # Jordan Vick · Engineering Portfolio
 
-Live site: https://jordankylevick-sudo.github.io/Portfolio_JV/
+Live site: https://jordan-vick.github.io/Portfolio/
 
 Static site (HTML/CSS/JS, no build step). Projects:
 
