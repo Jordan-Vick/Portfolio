@@ -169,3 +169,22 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 footer a { color: var(--ink-2); }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card { transition: none; } .card:hover { transform: none; } }
+
+/* ---- single featured card ---- */
+.cards.single { grid-template-columns: 1fr; }
+.card.wide { flex-direction: row; }
+.card.wide .media { flex: 0 0 52%; aspect-ratio: auto; min-height: 320px; }
+.card.wide .body { padding: 28px 30px; align-content: center; }
+.card.wide h3 { font-size: clamp(26px, 3vw, 34px); }
+@media (max-width: 760px) { .card.wide { flex-direction: column; } .card.wide .media { aspect-ratio: 16 / 10; min-height: 0; } }
+
+/* ---- experience extras ---- */
+.xp-body { display: grid; grid-template-columns: 48px 1fr; gap: 18px; align-items: start; }
+.xp-row .logo { width: 48px; height: 48px; object-fit: contain; background: #fff; border-radius: 10px; padding: 6px; border: 1px solid var(--line); }
+.xp-list { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 15.5px; display: grid; gap: 5px; max-width: var(--read); }
+.xp-list b { color: var(--ink); font-weight: 600; }
+.xp-sub { font-size: clamp(26px, 3vw, 34px); margin: 56px 0 18px; }
+.skills { display: grid; gap: 14px; }
+.skills > div > b { display: block; font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 4px; }
+@media (max-width: 480px) { .xp-body { grid-template-columns: 40px 1fr; gap: 12px; } .xp-row .logo { width: 40px; height: 40px; } }
+.xp-row .mono-logo { display: grid; place-items: center; font: 700 17px var(--font-display); color: var(--ink); background: var(--panel); }
