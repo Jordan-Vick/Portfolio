@@ -180,7 +180,8 @@ footer a { color: var(--ink-2); }
 
 /* ---- experience extras ---- */
 .xp-body { display: grid; grid-template-columns: 112px 1fr; gap: 20px; align-items: start; }
-.xp-row .logo { width: 112px; height: 52px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; border: 1px solid var(--line); }
+.xp-row .logo { display: block; width: 112px; height: 52px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; margin-top: 12px; }
+.xp-row .logo.flush { object-fit: cover; padding: 0; background: none; }
 .xp-list { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 15.5px; display: grid; gap: 5px; max-width: var(--read); }
 .xp-list b { color: var(--ink); font-weight: 600; }
 .xp-sub { font-size: clamp(26px, 3vw, 34px); margin: 56px 0 18px; }
@@ -190,4 +191,4 @@ footer a { color: var(--ink-2); }
 .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 24px 26px; }
 @media (max-width: 760px) { .skills-grid { grid-template-columns: 1fr; padding: 20px; } }
 @media (max-width: 560px) { .nav .nav-extra { display: none; } }
-.xp-row .mono-logo { display: grid; place-items: center; font: 700 17px var(--font-display); color: var(--ink); background: var(--panel); }
+.xp-row .mono-logo { display: grid; display: grid; place-items: center; font: 700 17px var(--font-display); color: var(--ink); background: var(--panel); }
